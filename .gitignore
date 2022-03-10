@@ -1,0 +1,16 @@
+__pycache__/
+.vscode/
+
+# Things for PyPi project
+dist/
+build/
+Anytranslate.egg-info/
+
+#Test
+tests/
+tests/__pycache__
+.pytest_cache/
+
+#api
+api/__pycache__/
+
