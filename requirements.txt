@@ -1,13 +1,9 @@
-anyio @ file:///Users/mac003/Library/Caches/pypoetry/artifacts/11/7e/c2/982c23702e5de96565320b9ea0a5f5511c9a515605ce439e6628a72a9a/anyio-3.5.0-py3-none-any.whl
-certifi @ file:///Users/mac003/Library/Caches/pypoetry/artifacts/89/06/5b/e4bfdf1b8370bdc0a26198e81afa98f68c01a8b1b515c9108c6ad98d8a/certifi-2021.10.8-py2.py3-none-any.whl
-charset-normalizer @ file:///Users/mac003/Library/Caches/pypoetry/artifacts/d5/27/31/db4fb74906e3a7f55f720e0079ac1850dd86e30651cdfa5e1f04c53cfa/charset_normalizer-2.0.12-py3-none-any.whl
-fastapi @ file:///Users/mac003/Library/Caches/pypoetry/artifacts/fc/c8/07/47905a8c6050c6f273f1c494b145af88a160d1d2104ac297490fac6a4f/fastapi-0.75.0-py3-none-any.whl
-idna @ file:///Users/mac003/Library/Caches/pypoetry/artifacts/90/36/8c/81eabf6ac88608721ab27f439c9a6b9a8e6a21cc58c59ebb1a42720199/idna-3.3-py3-none-any.whl
-langdetect @ file:///Users/mac003/Library/Caches/pypoetry/artifacts/31/e1/8c/a3969b35961b1ce564fe8c87a54b193e6f93bc34e81fc4010594aa2652/langdetect-1.0.9.tar.gz
-pydantic @ file:///Users/mac003/Library/Caches/pypoetry/artifacts/83/08/be/3691184da5162d8e082ed2c7031eeaad90974e0b81834836e34a2c3557/pydantic-1.9.0-cp310-cp310-macosx_11_0_arm64.whl
-requests @ file:///Users/mac003/Library/Caches/pypoetry/artifacts/d2/b2/c6/a04ce59140c6739203837d8dd0f518e29051b7ab61d2f34d4fd4241d30/requests-2.27.1-py2.py3-none-any.whl
-six @ file:///Users/mac003/Library/Caches/pypoetry/artifacts/89/b2/f8/fd92b6d5daa0f8889429b2fc67ec21eedc5cae5d531ee2853828ced6c7/six-1.16.0-py2.py3-none-any.whl
-sniffio @ file:///Users/mac003/Library/Caches/pypoetry/artifacts/2b/1b/93/9c34d727e29f7bb11ce5b2ca7f43e77cb4e96a81ee5e07a92763951416/sniffio-1.2.0-py3-none-any.whl
-starlette @ file:///Users/mac003/Library/Caches/pypoetry/artifacts/dd/06/3f/50a35a4853d7c822d9552eba04955f20cb5be7f501e9ad8931f5f1db89/starlette-0.17.1-py3-none-any.whl
-typing_extensions @ file:///Users/mac003/Library/Caches/pypoetry/artifacts/31/ff/51/fdb1a0eee7363cb4c4b8a2aedf3f68a72626ee6f1d7acf0416971e9af8/typing_extensions-4.1.1-py3-none-any.whl
-urllib3 @ file:///Users/mac003/Library/Caches/pypoetry/artifacts/1e/1d/9c/5b858776b9634f0a4a7bd2f7ff7751021cdc2604dbc44f794440ba8983/urllib3-1.26.8-py2.py3-none-any.whl
+pydantic==1.8.2
+requests==2.26.0
+fastapi==0.68.1
+uvicorn==0.12.3
+aiofiles==0.6.0
+python-multipart==0.0.5
+jinja2==2.11.2
+lxml==4.6.3
+langdetect==1.0.9
