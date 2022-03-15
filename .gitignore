@@ -9,7 +9,7 @@ Anytranslate.egg-info/
 #Test
 
 tests/__pycache__
-.pytest_cache/
+tests/.pytest_cache/
 
 #api
 api/__pycache__/
