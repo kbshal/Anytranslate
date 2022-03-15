@@ -10,11 +10,8 @@ This python program fetches the data from [Google translate](https://translate.g
 This is a API wrapper for Google Translate.
 
 ## How to use?
-You can use this program by running following commands
+Install poetry from [here](https://python-poetry.org/docs/) on your system
 ```sh
-sudo apt-get install poetry
-git clone https://github.com/kbshal/Anytranslate
-cd Anytranslate
 poetry shell
 poetry install
 ```
