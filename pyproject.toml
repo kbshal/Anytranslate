@@ -6,9 +6,15 @@ authors = ["kbshal"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-fastapi = "^0.75.0"
-requests = "^2.27.1"
-langdetect = "^1.0.9"
+fastapi = "0.68.1"
+requests = "2.26.0"
+langdetect = "1.0.9"
+pydantic = "1.8.2"
+uvicorn = "0.12.3"
+aiofiles = "0.6.0"
+python-multipart = "0.0.5"
+Jinja2 = "2.11.2"
+lxml = "4.6.3"
 
 [tool.poetry.dev-dependencies]
 
