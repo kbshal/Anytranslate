@@ -7,7 +7,7 @@ This python program fetches the data from [Google translate](https://translate.g
 
 ## About
 
-This is a API wrapper for Google Translate. This project was inspired from [google trans](https://pypi.org/project/googletrans/)
+This is a API wrapper for Google Translate.
 
 ## How to use?
 You can use this program by running following commands
@@ -26,7 +26,6 @@ uvicorn trans_api:app --reaload
 
 ## Why use this?
 
-How is this better than [google trans]()?
 - It is asynchronous.
 - Data can be fetched in json format from endpoint
 
