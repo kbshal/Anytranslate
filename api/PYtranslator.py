@@ -4,7 +4,6 @@
 
 '''
 
-
 import json, requests, random, re
 from urllib.parse import quote
 import urllib3
@@ -42,9 +41,6 @@ class Translator(Exception):
             premise = "Failed to connect"
 
             return "{}. Probable cause: {}".format(premise, "timeout")
-            # if tts.tld != 'com':
-            #     host = _translate_url(tld=tts.tld)
-            #     cause = "Host '{}' is not reachable".format(host)
 
         else:
             status = rsp.status_code
@@ -80,7 +76,6 @@ class google_translator:
         escaped_parameter = json.dumps(parameter, separators=(',', ':'))
         rpc = [[[random.choice(GOOGLE_TTS_RPC), escaped_parameter, None, "generic"]]]
         espaced_rpc = json.dumps(rpc, separators=(',', ':'))
-        # text_urldecode = quote(text.strip())
         freq_initial = "f.req={}&".format(quote(espaced_rpc))
         freq = freq_initial
         return freq
@@ -167,10 +162,8 @@ class google_translator:
         except requests.exceptions.ConnectTimeout as e:
             raise e
         except requests.exceptions.HTTPError as e:
-            # Request successful, bad response
             raise google_new_transError(tts=self, response=r)
         except requests.exceptions.RequestException as e:
-            # Request failed
             raise google_new_transError(tts=self)
 
     async def detect(self, text):
@@ -216,10 +209,8 @@ class google_translator:
                     return [detect_lang, LANGUAGES[detect_lang.lower()]]
             r.raise_for_status()
         except requests.exceptions.HTTPError as e:
-            # Request successful, bad response
             log.debug(str(e))
             raise google_new_transError(tts=self, response=r)
         except requests.exceptions.RequestException as e:
-            # Request failed
             log.debug(str(e))
             raise google_new_transError(tts=self)
