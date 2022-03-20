@@ -19,7 +19,6 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 URLS_SUFFIX = [re.search('translate.google.(.*)', url.strip()).group(1) for url in DEFAULT_SERVICE_URLS]
 URL_SUFFIX_DEFAULT = 'cn'
 
-
 class Translator(Exception):
     """Exception that uses context to present a meaningful error message"""
 
@@ -39,7 +38,6 @@ class Translator(Exception):
 
         if rsp is None:
             premise = "Failed to connect"
-
             return "{}. Probable cause: {}".format(premise, "timeout")
 
         else:
@@ -56,7 +54,6 @@ class Translator(Exception):
                 cause = "Uptream API error. Try again later."
 
         return "{}. Probable cause: {}".format(premise, cause)
-
 
 class google_translator:
  
