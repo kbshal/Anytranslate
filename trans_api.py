@@ -24,13 +24,9 @@ class Text(BaseModel):
 
         }
 
-# Get the language code
-
 @app.get('/codes')
 async def get_codes()-> str:
     return JSONResponse(constant.LANGUAGES)
-
-# Translator
 
 async def translate_munche(sentence:str,lang:str) -> dict:
     result_lang = detect(sentence)
