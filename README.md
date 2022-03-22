@@ -29,7 +29,7 @@ gunicorn trans_api:app --workers 4 --worker-class uvicorn.workers.UvicornWorker 
 
 
 ## LICENSE
- . Check the license from [here]()
+ - Check the license from [here](https://github.com/kbshal/Anytranslate/blob/master/LICENSE)
 
 
 
