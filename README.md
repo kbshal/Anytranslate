@@ -18,7 +18,7 @@ poetry install
 
 And finally start the program by 
 ```sh
-web: gunicorn -w 3 -k uvicorn.workers.UvicornWorker trans_api:app
+gunicorn -w 3 -k uvicorn.workers.UvicornWorker trans_api:app
 ```
 
 ## Why use this?
