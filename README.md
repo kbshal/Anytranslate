@@ -18,7 +18,7 @@ poetry install
 
 And finally start the program by 
 ```sh
-web: gunicorn -w 3 -k uvicorn.workers.UvicornWorker trans_api:app
+gunicorn trans_api:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:8080
 ```
 
 ## Why use this?
@@ -28,7 +28,8 @@ web: gunicorn -w 3 -k uvicorn.workers.UvicornWorker trans_api:app
 
 
 
-
+## LICENSE
+ - Check the license from [here](https://github.com/kbshal/Anytranslate/blob/master/LICENSE)
 
 
 

@@ -8,4 +8,4 @@ WORKDIR /Anytranslate
 COPY --from=requirements-stage /tmp/requirements.txt /Anytranslate/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /Anytranslate/requirements.txt
 COPY . /Anytranslate
-CMD ["gunicorn", "trans_api:app", "--workers", "4", "--worker-class", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:80"]
+CMD ["gunicorn", "trans_api:app", "--workers", "4", "--worker-class", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8080"]
