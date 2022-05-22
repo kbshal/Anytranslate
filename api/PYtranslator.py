@@ -106,13 +106,6 @@ class google_translator:
                                     headers=headers,
                                     )
         try:
-            if self.proxies == None or type(self.proxies) != dict:
-                self.proxies = {}
-            with requests.Session() as s:
-                s.proxies = self.proxies
-                r = s.send(request=response.prepare(),
-                           verify=False,
-                           timeout=self.timeout)
             for line in r.iter_lines(chunk_size=1024):
                 decoded_line = line.decode('utf-8')
                 if "MkEWBc" in decoded_line:
@@ -183,14 +176,6 @@ class google_translator:
                                     data=freq,
                                     headers=headers)
         try:
-            if self.proxies == None or type(self.proxies) != dict:
-                self.proxies = {}
-            with requests.Session() as s:
-                s.proxies = self.proxies
-                r = s.send(request=response.prepare(),
-                           verify=False,
-                           timeout=self.timeout)
-
             for line in r.iter_lines(chunk_size=1024):
                 decoded_line = line.decode('utf-8')
                 if "MkEWBc" in decoded_line:
