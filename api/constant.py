@@ -108,6 +108,7 @@ LANGUAGES = {
     'yi': 'yiddish',
     'yo': 'yoruba',
     'zu': 'zulu',
+    'lus':	'Lushai'
 }
 
 DEFAULT_SERVICE_URLS = ('translate.google.ac','translate.google.ad','translate.google.ae',
