@@ -12,7 +12,11 @@ import asyncio
 try:
     from api.constant import LANGUAGES, DEFAULT_SERVICE_URLS
 except:
-    from constant import LANGUAGES, DEFAULT_SERVICE_URLS
+    try:
+        from constant import LANGUAGES, DEFAULT_SERVICE_URLS
+    except:
+        from .constant import LANGUAGES, DEFAULT_SERVICE_URLS
+
     
 log = logging.getLogger(__name__)
 log.addHandler(logging.NullHandler())
