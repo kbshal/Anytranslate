@@ -1,4 +1,8 @@
-from PYtranslator import *
+try:
+    from PYtranslator import *
+except:
+    from .PYtranslator import *
+
 package = google_translator()
 
 async def translate_text(text,source,target):
@@ -16,10 +20,5 @@ async def detect_lang(text):
     return await package.detect(text)
 
 if __name__=="__main__":
-    print(asyncio.run(translate_text('Hi! I just got back from walking my dog.', 'en', 'ne')))
-    print(asyncio.run(detect_lang('Hi! I just got back from walking my dog.')))
-
-
-
-
-
+    # print(asyncio.run(translate_text('Hi! I just got back from walking my dog.', 'en', 'ne')))
+    print('en' in asyncio.run(detect_lang('Hi! I just got back from walking my dog.')))
